@@ -1,0 +1,255 @@
+.detail_container {
+  position: relative;
+  display: block;
+  margin: auto;
+  max-width: 1400px;
+  padding-bottom: 200px;
+  img {
+    width: 14px;
+  }
+  .mate_detail_category {
+    height: 60px;
+    width: 240px;
+    justify-content: center;
+  }
+  .detail_h4 {
+    color: #adadad;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .list_style {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 30px;
+    margin: 10px 0;
+    box-sizing: border-box;
+
+    width: 100%;
+  }
+  .detail_tag_flex {
+    .detail_tag_wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #d6d6d6;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      padding-top: 30px;
+
+      > div {
+        p {
+          float: left;
+          display: inline-block;
+          padding: 6px 10px;
+          border-radius: 40px 15px 15px 40px;
+          font-size: 14px;
+          line-height: 16px;
+          margin: 6px 3px;
+          color: #fff;
+          text-align: center;
+          &::before {
+            content: "";
+            display: inline-block;
+            justify-content: center;
+            width: 7px; /* 동그라미 크기 */
+            height: 7px;
+            background-color: white;
+            border-radius: 50%;
+            margin-right: 5px; /* 텍스트와 동그라미 간격 */
+            margin-bottom: 1px;
+          }
+        }
+
+        &.goal > p {
+          background-color: #66ccaa;
+        }
+
+        &.space > p {
+          background-color: #ff8d4a;
+        }
+
+        &.langs > p {
+          background-color: #61aaf2;
+        }
+
+        &.locas > p {
+          background-color: #8c8cff;
+        }
+
+        &.parts > p {
+          background-color: #ff6666;
+        }
+
+        &.recruit > p {
+          coloer: #66ccaa;
+        }
+
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .mate_comment {
+    // Comment 공통
+    img {
+      width: 14px;
+    }
+    .mateProfileWrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 30px;
+      position: relative;
+      .mateProfileImg {
+        width: 60px;
+        height: 60px;
+        background-color: #d6d6d6;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      .mateProfileText {
+        display: flex;
+        flex-direction: column;
+        .mateNickname {
+          color: #333;
+          font-weight: bold;
+        }
+        .mateEmotion {
+          li {
+            float: left;
+            margin-right: 10px;
+          }
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          .mateEmpathy {
+            padding-right: 3px;
+            color: #d6d6d6;
+            font-size: 10px;
+          }
+          p {
+            padding-right: 5px;
+            display: inline-block;
+            font-size: 13px;
+          }
+          .mateFilledHeart {
+            color: #ff6666;
+          }
+        }
+      }
+      .mateEmotion {
+        li {
+          float: left;
+          margin-right: 10px;
+        }
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        .mateEmpathy {
+          padding-right: 3px;
+          color: #d6d6d6;
+          font-size: 10px;
+        }
+        p {
+          padding-right: 5px;
+          display: inline-block;
+          font-size: 13px;
+        }
+        .mateFilledHeart {
+          color: #ff6666;
+        }
+
+        .heart {
+          width: 15px;
+          // position: absolute;
+          // bottom: 5px;
+          // left: 42px;
+        }
+      }
+    }
+    .mateCommentWrap {
+      display: flex;
+      flex-direction: column;
+
+      .mateCommentNewWrap {
+        display: flex;
+        flex-direction: row;
+        max-width: 1100px;
+        .mateComment {
+          border-bottom: 1px solid #dbdbdb;
+          max-width: 1100px;
+        }
+        .mateCommentButton {
+          border-radius: 20px;
+          background-color: #66ccaa;
+          padding: 8px 14px;
+          color: #fff;
+          float: right;
+        }
+      }
+    }
+    .mateCommentWrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mateList {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 1100px; /* 너비 제한 */
+    }
+
+    .mateComment {
+      border-bottom: 1px solid #dbdbdb;
+    }
+
+    .mateCommentButton {
+      border-radius: 20px;
+      width: 130px;
+      background-color: #66ccaa;
+      padding: 8px 14px;
+      color: #fff;
+      float: right;
+    }
+  }
+  .detail_black_box {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1240px;
+    z-index: -1;
+
+    .detail_black_cont {
+      background-color: #dbdbdb;
+      z-index: -1;
+      border-radius: 40px;
+      margin: 10px 0;
+      filter: blur(30px);
+    }
+
+    .detail_category {
+      height: 60px;
+      width: 240px;
+    }
+
+    .detail_title {
+      height: 60px;
+      width: 100%;
+    }
+
+    .detail_contents {
+      height: 500px; /* 여기에 높이를 명시적으로 지정 */
+      width: 100%;
+    }
+
+    .detail_right_wrap {
+      height: 200px; /* 여기에 높이를 명시적으로 지정 */
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,245 @@
+#today_detail {
+  height:auto;
+  position: relative;
+  display: block;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  >div {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  >div>div {
+    content: "";
+    display: inline-block;
+    padding: 0 40px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 40px;
+    margin: 0 0 24px 0;
+  }
+  .form-control {
+    margin-left: 10px;
+  }
+
+  .inner_box>div {
+    background: #fff;
+  }
+
+  .black_box>div {
+    filter: blur(15px);
+    background-color: #3333;
+  }  
+
+  h4 {    
+    color: #333;
+    font-weight: 600;
+    display: inline-block;
+  }
+  .commentIng {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #6ca; 
+  }
+  
+  .commentDone {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #f66; 
+  }
+  
+  .chatting {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #333; 
+  }
+
+
+  .cate {
+    width: 280px;
+    margin-right: 24px;
+  }
+
+  .status {
+    width: 280px;
+  }
+  .today_text {
+    margin-left: 10px;
+  }
+
+  .title {
+    width: 100%;
+
+    span::after {
+      display: none;
+    }    
+    .details {
+      display: block;
+      float: right;
+
+      li {
+        display: inline-block;
+        margin-left: 20px;
+        line-height: 80px;
+      }
+
+      img {
+        width: 14px;
+        margin: 0 6px 0 0;
+      }
+    }
+  }
+
+  .cont {
+    position: relative;
+    width: 59%;
+    height: 54vh;
+    float: left;
+    overflow: scroll;
+    .cont_divide {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h4 {      
+      display: block;
+      line-height: 28px;
+    }
+    .detail_content {
+      margin-top: 20px;
+    }
+    .writer {      
+      align-items: center;
+      height: 70px;
+      width: 90%;
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      border-top: 1px solid rgba(51, 51, 51, 0.5); /* 회색에 투명도 적용 */
+      margin-bottom: 20px;
+      img {
+        margin-right: 10px;
+      }
+      .profile_namemsg {               
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+
+    .profile {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid #3332;
+      overflow: hidden;
+    }
+  }
+  .thumbnail {
+    height: auto;
+    width: 100%;
+  }
+
+  .thum {
+    width: 39%;
+    height: 54vh;
+    float: right;
+    overflow: scroll;
+
+    h4 {
+      display: block;
+    }
+  }
+
+  .comment {
+    width: 100%;
+    height: fit-content;
+    position:static;
+    z-index: 999;
+
+    img {
+      width: 14px;
+    }
+
+    .profile {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid #3332;
+      overflow: hidden;
+    }
+
+  }
+
+
+
+
+  .answered {
+    padding: 0 24px 0 0;
+    border-radius: 0;
+    margin: 0 24px 0 0;
+    color: #6ca;
+
+    &.none {
+      color: #f66;
+    }
+  }
+
+  .quest {
+    color: #6ca;
+  }
+
+  .likes {
+    color: #f66;
+  }
+
+  .cmnts {
+    color: #333;
+  }
+
+  .views {
+    font-weight: 400;
+    color: #333a;
+  }
+  .btn.btn-outline-secondary {
+    color: #f66;
+  }
+  .btn.btn-outline-danger {
+    color: lightblue;
+  }
+  .profile_img {
+    display: flex;
+  }
+  .file_text {
+    color: #3339;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .file-display-container {
+    margin-top: 10px; /* 원하는 만큼의 간격 설정 */
+  }
+  .create_link {
+    float: right;
+    text-align: right;
+    margin-top: 24px;
+    line-height: 40px;
+    padding: 0 24px;
+    color: #6ca;
+    border: 1px solid #6ca;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 호버 효과를 위한 트랜지션 */
+  }
+  
+  .create_link:hover {
+    opacity: 1;
+        color: #fff;
+        background: #6ca;
+  }
+}

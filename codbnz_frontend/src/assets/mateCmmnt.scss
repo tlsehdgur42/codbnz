@@ -1,0 +1,32 @@
+.mate_comments_container {
+  // background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 1rem;
+  width: 100%;
+  .action_wrap {
+    img {
+      width: 14px;
+      cursor: pointer;
+    }
+  }
+
+  .mate_com_flex {
+    display: flex;
+    .comment_proile_img {
+      width: 80px;
+      height: 80px;
+      border-radius: 100px;
+      overflow: hidden;
+      margin-right: 10px;
+      img {
+        width: 100%;
+      }
+    }
+    .comment_wrap {
+      width: 80%;
+    }
+    .action_wrap {
+      width: 10%;
+    }
+  }
+}

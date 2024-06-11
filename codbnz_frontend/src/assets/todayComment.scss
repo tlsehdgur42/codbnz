@@ -1,0 +1,23 @@
+.commentwrite {
+    display: flex;  
+    textarea {
+        border: 1px solid lightgrey;
+    }
+}
+.comment-id {
+    margin-right: 20px;
+}
+.comment-date {
+    margin-right: 10px;
+}
+.comment-like {
+    margin-right: 10px;
+}
+.comment-text-first {
+    margin-left: 62px;
+    margin-bottom: 20px;
+}
+.comment-text-second {
+    margin-left: 62px;
+    margin-bottom: 20px;
+}
